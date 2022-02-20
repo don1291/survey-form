@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Survey Form</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class=container>
+  <h1 id="title" class="text-center">Customer Satisfaction Survey Form</h1>
+  <p id="description" class="description text-center">
+      Thank you for taking the time to help us improve our service.
+    </p>
+  <form id="survey-form" action=""> 
+  <div class="row">
+      <div class="col-25">
+        <label id="name-label" for="name">First Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="firstname" placeholder="Your name.."required>
+      </div>
+    </div><br>
+    <div class="row">
+      <div class="col-25">
+        <label id="name-label" for="name">Last Name</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="name" name="lastname" placeholder="Your last name.."required>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-25">
+        <label id="email-label" for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="email" id="email" for= "email" name="email" class="form-control" placeholder="Your email.."required />
+      </div>
+    </div>
+  </br>
+  <div class="col-25">
+        <label id="number-label" for="name">Age</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="number" min="18"
+        max="99" name="age" placeholder="Your age.."required>
+      </div>
+</br>
+<div class="row">
+      <div class="col-25">
+        <label for="service">Service</label>
+      </div>
+      <div class="col-75">
+        <select id="dropdown" name="role">
+            <option disabled selected value>Select current service to call</option>
+          <option value="phone">Phone</option>
+          <option value="internet">Internet</option>             <option value="mobile">Mobile</option>
+        </select>
+      </div>
+  <br>
+  <p>Did we help solve your issues? Please select your choice:</p>
+  <input type="radio" id="choice1" name="choice" value="30">
+  <label for="age1">Yes</label><br>
+  <input type="radio" id="choice2" name="choice" value="60">
+  <label for="age2">No</label><br>  
+  <br>
+<p>Please select your gender:</p>
+  <input type="checkbox" id="gender1" name="gender" value="30">
+  <label for="gender1">Male</label><br>
+  <input type="checkbox" id="gender2" name="gender" value="60">
+  <label for="gender2">Female</label><br>  
+  <input type="checkbox" id="gender3" name="gender" value="100">
+  <label for="gender3">Perfer Not to Answer</label><br><br>
+  <p>Comment:<p>
+<textarea rows="4" cols="50" name="comment" form="usrform">
+Enter text here...</textarea>
+<br>
+    <div class="row">
+      <input type="submit" id="submit" value="Submit">
+    </div>
+  </form>
+</div>
+<!-- partial -->
+  <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
